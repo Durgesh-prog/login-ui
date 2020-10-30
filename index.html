@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple Login UI</title>
+		<link rel='stylesheet' href='./index.css' />
+	</head>
+	<body> 
+		<div  class='splash-screen'>
+			<img src='./assets/Tiffinia_icon_small.png' alt='Tiffinia' class='logo' />
+		</div>
+		<div id='main-screen' class='main-screen hide'>
+			<img src='./assets/bg 2.1.png' alt='background' class='main-bg' />
+			<div class='top'>
+				<img src='./assets/object 1.png' alt='background' class='object1' />
+				<div class='tag-line'>
+					<p id='tag1'>HURRY!!</p>
+					<p id='tag2'>HUNGER DON'T WAIT</p>
+				</div>	
+			</div>
+			<div class='bottom'>
+				<button  class="btn-main btn" id='getStarted' ><p>Get Started </p><small>Avail best offers for you</small></button>
+				<button class="btn-sec btn" >Continue Without Login</button>
+				<button class="btn-sec btn" >Already a Tiffina Member? <a href='#login-options-screen' >LOGIN</a></button>
+			</div>
+		</div>
+		<div id='login-options-screen' class='login-options-screen hide'>
+			<img src='./assets/bg 2.2.png' alt='background' class='login-bg' />
+			<img src='./assets/object 2.png' alt='background' class='object2' />
+			<div class='menu'>		
+				<div class='options'>
+					<h3>LOGIN</h3>
+					<button  class="btn-sec btn" id='mobile-option-clicked' ><span class='small-icon' ><img src='./assets/icon _mobile.png' /><p>Enter Your Mobile Number</p></span></button>
+					<button class="btn-sec btn" ><span class='small-icon' ><img src='./assets/icon _fb.png' /><p>Continue with Facebook</p></span></button>
+					<button class="btn-sec btn" ><span class='small-icon' ><img src='./assets/icon _google.png' /><p>Continue with Google</p></span></button>
+					<button class="btn-sec btn" ><span class='small-icon' ><img src='./assets/icon _mail.png' /><p>Continue with Email</p></span></button>
+				</div>
+				<div class='footer'>
+					<p>By Continuing,You Agree To Our </p>
+					<p><a href='#'>Terms of Service</a> & <a href="#">Privacy Policy</a> </p>
+				</div>
+			</div>
+		</div> 
+		<div id='login-mobile-screen' class='login-mobile-screen hide'>
+			<img src='./assets/bg 2.3.png' alt='background' class='login-bg' />																																																																								
+			<img src='./assets/object 3.png' alt='background' class='object3' />		
+			<div class='mobile-number-option'>
+				<h3>LOGIN</h3>
+				<small>Enter Your Mobile Number</small>
+				<span style="display:flex;"><input type='tel' name='tel' value="+91" style="width:2rem;padding:2px;"/>
+				<input type='tel' name='tel' value="" /></span>
+			</div>
+			<div class='mobile-number-verification'>
+				<h3>VERIFY OTP</h3>
+				<small>OTP Sent to 9874733922</small>
+				<input type='tel' />
+				<div class='sub-info'>
+					<small>Change Mobile Number</small>
+					<small>Auto-Detect in 00:00  <a href="#">Resend</a></small>
+				</div>
+			</div>
+			<button class="btn-main btn" >PROCEED</button>
+		</div>
+	</body>
+	<script src='index.js'>
+	</script
+</html>
